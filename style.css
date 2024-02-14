@@ -1,0 +1,93 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.top-div {
+  margin-bottom: 30px;
+}
+
+#valentine-question {
+  color: #8B0000;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+
+section .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+button#yes-button {
+  background-color: #50c878;
+  color: #fff;
+  height: 48px;
+}
+
+button#no-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  height: 48px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  #valentine-question {
+    font-size: 20px;
+  }
+  button#yes-button {
+    height: 48px;
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  button#yes-button {
+    height: 48px;
+    width: 70px;
+  }
+}
